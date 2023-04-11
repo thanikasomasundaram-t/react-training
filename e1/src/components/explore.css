@@ -1,0 +1,60 @@
+.explore-section {
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  align-items: flex-end;
+}
+
+.image {
+  height: 740px;
+}
+
+.image img {
+  right: 0;
+  height: 100%;
+}
+
+.explore-details {
+  width: 30%;
+  color: #702053;
+  position: relative;
+}
+
+.explore-details h4 {
+  font-size: 1.7em;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: #90537c;
+}
+
+.explore-details h1 {
+  font-size: 4.5em;
+  font-weight: 300;
+  margin-bottom: 100px;
+
+}
+
+h1 span {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+select {
+  border: none;
+  border: 1px solid black;
+  height: 70px;
+  width: 710px;
+  font-size: 1.1em;
+  padding: 10px 30px;
+  margin-bottom: 25px;
+}
+
+.explore-button {
+  border: none;
+  background-color: #702053;
+  color: white;
+  height: 50px;
+  width: 160px;
+  font-size: 1.2em;
+  font-weight: 500;
+}
