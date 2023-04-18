@@ -1,7 +1,8 @@
+/* START - EXPLORE SECTION */
 .explore-section {
   display: flex;
   justify-content: flex-end;
-  gap: 50px;
+  gap: 55px;
   align-items: flex-end;
 }
 
@@ -14,6 +15,7 @@
   height: 100%;
 }
 
+/* START - EXPLORE DETAILS SECTION */
 .explore-details {
   width: 30%;
   color: #702053;
@@ -58,3 +60,39 @@ select {
   font-size: 1.2em;
   font-weight: 500;
 }
+
+/* END - EXPLORE DETAILS */
+
+/* START EXPLORE  DESTIANTION DETAIL */
+.explore-destination-detail {
+  width: 30%;
+  position: relative;
+}
+
+.explore-destination-detail h1 {
+  font-size: 5.5em;
+  font-weight: 500;
+  color: #702053;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.explore-destination-detail div {
+  background-color: #702053;
+  color: #ffffff;
+  padding: 90px 75px;
+  font-size: 3.8em;
+  font-weight: 900;
+  width: 1050px;
+}
+
+.temperature {
+  padding-top: 40px;
+  font-size: 4em;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+/* END EXPLORE  DESTIANTION DETAIL */
+
+/* END - EXPLORE SECTION */

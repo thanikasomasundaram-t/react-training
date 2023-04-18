@@ -1,13 +1,14 @@
 import React from 'react';
-import Destinations from '../components/Destinations';
-import Explore from '../components/Explore';
 import Header from '../components/Header';
+import Explore from '../components/Explore';
 import Contact from '../components/Contact';
+import Destinations from '../components/Destinations';
 
-const Home = () => {
+const Details = () => {
+
   return(
     <>
-      <Header/>
+      <Header />
       <Explore />
       <Destinations />
       <Contact />
@@ -15,4 +16,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Details;

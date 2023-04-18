@@ -1,25 +1,38 @@
-import React from 'react';
-import cover from '../assests/images/cover.png';
+import React, { useState, useEffect } from 'react';
 import './explore.css';
+import ExploreSection from './ExploreSection';
+import ExploreDetails from './ExploreDetails';
 
 const Explore = () => {
-  return(
+  const [explore, setExplore] = useState(true);
+  const [destination, setDestination] = useState();
+  const [destinationCardDetails, setDestinationCardDetails] = useState([]);
+
+  useEffect(() => {
+    const fetchDestinationCardDetails = async () => {
+      try {
+        let response = await fetch('places.json');
+        setDestinationCardDetails(await response.json());
+      }
+      catch (err) {
+        console.log(err);
+      }
+    }
+    fetchDestinationCardDetails();
+  }, []);
+
+  return (
     <section className="explore-section">
-      <div className="explore-details">
-        <h4>WELCOME TO EXPLORER</h4>
-        <h1>Your Adventure Travel Expert in the <span>SOUTH</span></h1>
-        <select>
-          <option>Choose</option>
-          <option>Choose</option>
-          <option>Choose</option>
-        </select>
-        <button className="explore-button">EXPLORE</button>
-      </div>
+      {explore
+        ?  <ExploreSection destinationCardDetails={ destinationCardDetails }/>
+        :  < ExploreDetails/>}
       <div className="image">
-        <img src={ cover } alt="cover"/>
+        <img src='images/cover.png' alt="cover" />
       </div>
     </section>
   );
 };
+
+
 
 export default Explore;

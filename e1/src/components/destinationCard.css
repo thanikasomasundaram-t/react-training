@@ -1,0 +1,40 @@
+.destination-card {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+}
+
+.destination-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.destination-description {
+  font-size: 2.4em;
+  font-weight: 300;
+  padding: 20px 0 15px 0;
+}
+
+.destination-title {
+  font-size: 1.2em;
+  font-weight: 900;
+  padding-bottom: 35px;
+}
+
+.synopsis {
+  font-size: 1.2em;
+  font-weight: 400;
+  height: 183px;
+  overflow: auto;
+}
+
+.read-more-button {
+  border: none;
+  background-color: #702053;
+  color: #ffffff;
+  width: 165px;
+  padding: 15px 0;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 20px;
+}

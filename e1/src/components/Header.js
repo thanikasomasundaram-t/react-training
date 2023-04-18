@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../assests/images/logo.png';
 import './header.css';
 
 const Header = () => {
@@ -7,7 +6,7 @@ const Header = () => {
     <header>
       <div>
         <a href="/">
-          <img src={logo} alt="logo" />
+          <img src='images/logo.png' alt="logo" />
         </a>
       </div>
       <div className='menu'>

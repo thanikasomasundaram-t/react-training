@@ -1,0 +1,24 @@
+.destinations-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 90px;
+}
+
+.destinations-section {
+  padding: 100px;
+}
+
+.destination-heading h1 {
+  color: #702053;
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.destinations-section h4 {
+  color: #90537c;
+  font-size: 1.4em;
+  font-weight: 400;
+  padding-bottom: 55px;
+}
+
